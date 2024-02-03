@@ -1,0 +1,57 @@
+.corner__button {
+  font-family: "Lato", sans-serif;
+  width: fit-content;
+  height: auto;
+  letter-spacing: 0.02rem;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid currentColor;
+  padding: 0.7rem 0.2rem;
+  font-size: 1rem;
+  color: #06c17f;
+  background-color: transparent;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.corner__button:hover {
+  padding: 0.5rem 0;
+}
+.corner__button:active {
+  border-width: 1px;
+}
+.corner__button span {
+  position: relative;
+  z-index: 2;
+}
+.corner__button::before,
+.corner__button::after {
+  content: "";
+  position: absolute;
+  background: rgb(30, 21, 16);
+  z-index: 1;
+  transition: all 0.3s;
+}
+.corner__button::before {
+  width: calc(100% - 1rem);
+  height: calc(101% + 2rem);
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.corner__button::after {
+  height: calc(100% - 1rem);
+  width: calc(101% + 1rem);
+  left: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.name {
+  position: fixed;
+  width: 195px;
+  height: 40px;
+  padding: 0.5rem 2rem;
+  background-color: #ffffff17;
+  filter: brightness(2);
+}

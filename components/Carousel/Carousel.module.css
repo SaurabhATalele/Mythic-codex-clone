@@ -1,0 +1,91 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  max-height: 100vh;
+  position: relative;
+}
+
+.main::-webkit-scrollbar,
+.button {
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  rotate: 45deg;
+  border: none;
+  cursor: pointer;
+}
+
+.button img {
+  width: 20px;
+  height: 20px;
+  rotate: -45deg;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  right: 5rem;
+  top: 20rem;
+}
+
+.name__heading {
+  width: 300px;
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  font-size: 3.6rem;
+  font-variant: small-caps;
+  filter: brightness(2);
+}
+
+.info__section {
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  filter: brightness(2);
+  font-family: "cirka";
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  transition-duration: 1s;
+}
+
+.creature__desc {
+  width: 20rem;
+  position: absolute;
+  text-align: justify;
+  right: 5rem;
+  font-family: "cirka";
+  font-size: 1.2rem;
+  font-weight: 500;
+  filter: brightness(2);
+}
+
+.discover__button {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+  right: 5rem;
+  padding: 2rem;
+  backdrop-filter: blur(2px);
+  background-color: transparent;
+  background-blend-mode: difference;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: lighter;
+  border: none;
+  color: white;
+  /* border: 1px solid white; */
+}
+
+.discover__button p {
+  filter: brightness(2);
+}
