@@ -11,13 +11,19 @@ const Navbar = () => {
   const [playing, setPlaying] = useState(false);
 
   const play = () => {
-    if (audioref) playing ? audioref.current.pause() : audioref.current.play();
+    if (audioref && audioref.current) {
+      playing ? (audioref.current as HTMLAudioElement).pause() : (audioref.current as HTMLAudioElement).play();
+    }
     setPlaying(!playing);
   };
 
   const playPen = () => {
-    audioref2.current.play();
+    if (audioref2 && audioref2.current) {
+      (audioref2.current as HTMLAudioElement).play();
+    }
   };
+
+  console.log("this ia 1", audioref.current);
 
   return (
     <div className={styles.navbar}>
@@ -25,13 +31,22 @@ const Navbar = () => {
       <audio ref={audioref2} src={"/click.mp3"}></audio>
       <div className={styles.logo}>Mythic Codex</div>
       <div className={styles.links}>
-        <Link href={"#"} onMouseOver={playPen}>
+        <Link
+          href={"#"}
+          onMouseOver={playPen}
+        >
           Home
         </Link>
-        <Link href={"#Explore"} onMouseOver={playPen}>
+        <Link
+          href={"#Explore"}
+           onMouseOver={playPen}
+        >
           Explore
         </Link>
-        <Link href={"#quiz"} onMouseOver={playPen}>
+        <Link
+          href={"#quiz"}
+          onMouseOver={playPen}
+        >
           quiz
         </Link>
         <button
