@@ -3,17 +3,8 @@ import styles from "./Carousel.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import Corners from "../Corners/Corners";
+import carouselData from "../data";
 
-type data = {
-  [key: number]: {
-    color: string;
-    image: string;
-    name: string;
-    creatureName: string;
-    desc: string;
-    info: { origin: string; region: string; symbols: string };
-  };
-};
 
 export default function Home() {
   const [rotation, setRotation] = useState<number>(0);
@@ -29,45 +20,7 @@ export default function Home() {
     c = index - 1 < 0 ? 2 : index - 1;
     setIndex(c);
   };
-
-  const carouselData: data = {
-    0: {
-      color: "FF9843",
-      image: "phoenix.webp",
-      name: "THE IMMORTAL FIREBIRD",
-      creatureName: "Phoenix",
-      desc: "The Phoenix, from Greek mythology, is a symbol of resilience, immortality, and renewal, embodying life's endless cycle.",
-      info: {
-        origin: "Greek Mythology",
-        region: "Ancient Greece",
-        symbols: "fire sun renewal",
-      },
-    },
-    1: {
-      color: "7B3D80",
-      image: "kitsune.webp",
-      creatureName: "Kitsune",
-      desc: "Kitsune, from Japanese folklore, is a magical fox known for intelligence, trickery, and enchanting shape-shifting abilities. Playing a pivotal role in many mystical tales.",
-      name: "THE ENCHANTING FOX SPIRIT",
-      info: {
-        origin: "Japanese Mythology",
-        region: "Japan",
-        symbols: "Magic Fire Intelligence",
-      },
-    },
-    2: {
-      color: "43766C",
-      image: "quetzalcoatl.webp",
-      name: "THE FEATHERED SERPANT",
-      creatureName: "Quetzalcoatl",
-      desc: "Quetzalcoatl, in Mesoamerican mythology, is a feathered-serpent deity associated with wind and learning, revered by civilizations like the Aztecs and the Toltecs.",
-      info: {
-        origin: "Aztec Mythology",
-        region: "Teotihucan",
-        symbols: "Wind Water Wisdom",
-      },
-    },
-  };
+ 
 
   return (
     <main className={styles.main}>
@@ -113,7 +66,7 @@ export default function Home() {
               fill={`#${carouselData[index].color}`}
               fill-rule="evenodd"
               d="m263.156 497.481 5.63 5.63-5.63 5.629-5.629-5.629 5.629-5.63Zm0-1.414.707.707 5.63 5.629.707.708-.707.707-5.63 5.629-.707.707-.707-.707-5.629-5.629-.707-.707.707-.708 5.629-5.629.707-.707Zm1.458 8.501a2.061 2.061 0 1 0-2.915-2.915 2.061 2.061 0 0 0 2.915 2.915ZM494.805 262.973l5.629-5.629 5.63 5.629-5.63 5.63-5.629-5.63Zm-1.414 0 .707-.707 5.629-5.629.707-.707.708.707 5.629 5.629.707.707-.707.708-5.629 5.629-.708.707-.707-.707-5.629-5.629-.707-.708Zm5.586-1.457a2.061 2.061 0 1 0 2.915 2.915 2.061 2.061 0 0 0-2.915-2.915ZM263.156 22.925l5.63 5.63-5.63 5.629-5.629-5.63 5.629-5.629Zm0-1.414.707.707 5.63 5.63.707.706-.707.708-5.63 5.629-.707.707-.707-.707-5.629-5.63-.707-.707.707-.707 5.629-5.63.707-.706Zm1.458 8.501a2.062 2.062 0 1 0-2.916-2.915 2.062 2.062 0 0 0 2.916 2.915ZM20.249 262.974l5.63-5.63 5.629 5.63-5.63 5.629-5.63-5.629Zm-1.414 0 .707-.708 5.63-5.629.706-.707.707.707 5.63 5.629.707.708-.707.707-5.63 5.629-.707.707-.707-.707-5.63-5.629-.706-.707Zm5.586-1.458a2.061 2.061 0 1 0 2.914 2.915 2.061 2.061 0 0 0-2.914-2.915Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
         </div>
@@ -206,3 +159,5 @@ export default function Home() {
     </main>
   );
 }
+
+
