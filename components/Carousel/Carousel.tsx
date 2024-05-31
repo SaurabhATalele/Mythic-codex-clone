@@ -12,12 +12,12 @@ export default function Home() {
 
   const rotate = () => {
     setRotation(rotation + 90);
-    setIndex((index + 1) % 3);
+    setIndex((index + 1) % 5);
   };
   const rotateRev = () => {
     setRotation(rotation - 90);
     var c = index;
-    c = index - 1 < 0 ? 2 : index - 1;
+    c = index - 1 < 0 ? 4 : index - 1;
     setIndex(c);
   };
  

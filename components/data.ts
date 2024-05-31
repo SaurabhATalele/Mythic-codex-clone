@@ -52,7 +52,7 @@ const carouselData: data = {
   },
   3: {
     color: "f4ff5b",
-    image: "jambvanDesc.webp",
+    image: "Jambvan.webp",
     descImg: "jambvanDesc.webp",
     name: "THE WISE KING OF BEARS",
     creatureName: "Jambvan",
@@ -65,7 +65,7 @@ const carouselData: data = {
   },
   4: {
     color: "01faff",
-    image: "3.webp",
+    image: "cannon.webp",
     descImg: "3.webp",
     name: "THE SEA'S ANCIENT MONSTER",
     creatureName: "Leviathan,",
