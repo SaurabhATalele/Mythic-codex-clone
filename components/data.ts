@@ -50,6 +50,32 @@ const carouselData: data = {
       symbols: "Wind Water Wisdom",
     },
   },
+  3: {
+    color: "f4ff5b",
+    image: "jambvanDesc.webp",
+    descImg: "jambvanDesc.webp",
+    name: "THE WISE KING OF BEARS",
+    creatureName: "Jambvan",
+    desc: "Journey through the vibrant tales of India, where Hindu mythology reigns supreme. Encounter Jambavan, the mighty bear king, and his pivotal role in the Ramayana. Explore his wisdom, strength, and unwavering loyalty amidst the vast and diverse collection of Hindu legends.",
+    info: {
+      origin: "Hindu Mythology",
+      region: "India",
+      symbols: "Strength Life Wisdom",
+    },
+  },
+  4: {
+    color: "01faff",
+    image: "3.webp",
+    descImg: "3.webp",
+    name: "THE SEA'S ANCIENT MONSTER",
+    creatureName: "Leviathan,",
+    desc: "Navigate the ancient lands of Canaan, where myths and legends took root. Learn about the Leviathan, a colossal sea monster embodying chaos, and its significance in battles of order versus chaos, symbolizing the tumultuous nature of the cosmos in Canaanite lore.",
+    info: {
+      origin: "Canaan Mythology",
+      region: "Near East",
+      symbols: "Water Chaos Fear",
+    },
+  },
 };
 
 export default carouselData;

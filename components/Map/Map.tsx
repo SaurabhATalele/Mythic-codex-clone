@@ -89,7 +89,7 @@ const Map = (props: Props) => {
         </div>
 
         {/* point no 3  */}
-        <div className={styles.test}>
+        <div className={styles.test} onMouseEnter={()=>setActive(4)}>
           <div className={styles.dot}></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ const Map = (props: Props) => {
         </div>
 
         {/* point no 4 */}
-        <div className={styles.test}>
+        <div className={styles.test} onMouseEnter={()=>setActive(3)}>
           <div className={styles.dot}></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -27,12 +27,12 @@ const Card = (props: props) => {
       <div className={styles.creature__desc}>
         {carouselData[props.num].desc}
       </div>
-      <button
+      {/* <button
         className={styles.discover__button}
         style={{ color: `#${carouselData[props.num].color}` }}
       >
         Listen Story
-      </button>
+      </button> */}
     </div>
   );
 };
