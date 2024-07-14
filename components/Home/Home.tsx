@@ -16,12 +16,14 @@ const Home = (props: Props) => {
     ) as HTMLImageElement | null;
 
     scroll((progress) => {
-      rotateWheel && (rotateWheel.style.transform = `translate(-50%,-70%) rotate(${
-        progress * 1000
-      }deg)
+      rotateWheel &&
+        (rotateWheel.style.transform = `translate(-50%,-70%) rotate(${
+          progress * 1000
+        }deg)
       scale(${1 - progress * 1.5})
       `);
-    scalingimage&&(scalingimage.style.transform = `translate(-50%,-70%) 
+      scalingimage &&
+        (scalingimage.style.transform = `translate(-50%,-70%) 
       scale(${1 - progress * 1.5})
       `);
     });
@@ -36,6 +38,7 @@ const Home = (props: Props) => {
           width={300}
           height={300}
           id="image"
+          priority={true}
           className={styles.home__image}
           alt="creature"
         />

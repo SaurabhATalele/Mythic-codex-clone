@@ -8,12 +8,12 @@ import Map from "@/components/Map/Map";
 
 const page = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Home />
       <Carousel />
       <Map />
-    </div>
+    </>
   );
 };
 
