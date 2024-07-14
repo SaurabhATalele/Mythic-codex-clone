@@ -5,7 +5,6 @@ import { useState } from "react";
 import Corners from "../Corners/Corners";
 import carouselData from "../data";
 
-
 export default function Home() {
   const [rotation, setRotation] = useState<number>(0);
   const [index, setIndex] = useState<number>(0);
@@ -20,7 +19,6 @@ export default function Home() {
     c = index - 1 < 0 ? 4 : index - 1;
     setIndex(c);
   };
- 
 
   return (
     <main className={styles.main}>
@@ -76,6 +74,7 @@ export default function Home() {
             width={3200}
             height={1800}
             alt="creature"
+            priority
             style={{
               objectFit: "cover",
               width: "30%",
@@ -159,5 +158,3 @@ export default function Home() {
     </main>
   );
 }
-
-
