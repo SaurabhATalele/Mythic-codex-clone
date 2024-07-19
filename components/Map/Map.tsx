@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "./Map.module.css";
 import Image from "next/image";
 import Card from "./Card";
@@ -22,11 +22,9 @@ const Map = (props: Props) => {
       </h1>
       <div className={styles.points__container}>
         {/* point no 1  */}
-        <div
-          className={styles.test}
-          onMouseEnter={() => setActive(2)}
-        >
+        <div className={styles.test} onMouseEnter={() => setActive(2)}>
           <div className={styles.dot}></div>
+          <div className={styles.line}></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -57,8 +55,9 @@ const Map = (props: Props) => {
         </div>
 
         {/* point NO 2 */}
-        <div className={styles.test} onMouseEnter={()=>setActive(0)}>
+        <div className={styles.test} onMouseEnter={() => setActive(0)}>
           <div className={styles.dot}></div>
+          <div className={styles.line}></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -89,8 +88,9 @@ const Map = (props: Props) => {
         </div>
 
         {/* point no 3  */}
-        <div className={styles.test} onMouseEnter={()=>setActive(4)}>
+        <div className={styles.test} onMouseEnter={() => setActive(4)}>
           <div className={styles.dot}></div>
+          <div className={styles.line}></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -121,8 +121,9 @@ const Map = (props: Props) => {
         </div>
 
         {/* point no 4 */}
-        <div className={styles.test} onMouseEnter={()=>setActive(3)}>
+        <div className={styles.test} onMouseEnter={() => setActive(3)}>
           <div className={styles.dot}></div>
+          <div className={styles.line}></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -153,8 +154,9 @@ const Map = (props: Props) => {
         </div>
 
         {/* point no 5 */}
-        <div className={styles.test} onMouseEnter={()=>setActive(1)}>
+        <div className={styles.test} onMouseEnter={() => setActive(1)}>
           <div className={styles.dot}></div>
+          <div className={styles.line}></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -184,7 +186,7 @@ const Map = (props: Props) => {
           </svg>
         </div>
 
-        <Card num={active}/>
+        <Card num={active} />
       </div>
     </div>
   );

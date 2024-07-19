@@ -86,7 +86,7 @@ export default function Home() {
               top: "50%",
               transform: "translate(-50%,-50%) ",
             }}
-          ></Image>
+          />
         </div>
       </div>
 
