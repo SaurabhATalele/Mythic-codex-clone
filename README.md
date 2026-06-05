@@ -1,3 +1,4 @@
+<img width="1510" height="688" alt="mythic-codex" src="https://github.com/user-attachments/assets/947d7c51-06da-4f9e-81bb-787cc73fbee8" />
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
